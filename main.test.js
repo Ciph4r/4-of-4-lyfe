@@ -2,12 +2,91 @@
  * YOUR CODE HERE *
  ******************/
 
+const addAll = (x) => {
+let addup = 0
+  for (const num of x){
+  addup += num
+  }
+  return addup
+}
+
+const countSpaces = (x) => {
+  let spceCount = 0
+  for (const space of x){
+    if (space === ' '){
+      spceCount ++
+    }
+  }
+  return spceCount
+}
 
 
+const countTrues = (x) => {
+  let trueCnt = 0
+  for (const array of x){
+  if (array === true){
+    trueCnt ++
+  }
+}return trueCnt
+}
+
+const makeFriendly = (x) => {
+  let newPara = ''
+  for (const para of x)
+  if (para === '.') {
+  newPara+= '!'
+  }
+  else { newPara += para 
+  }
+  return newPara
+}
+
+const cubeAll = (x) => {
+  let newArray =[]
+  for (const cube of x){
+    newArray.push(cube**3)
+  }
+  return newArray
+}
 
 
+const addNoises = (x) => {
+  let newArray = []
+  const dogs = [
+    'Fido',
+    'Rolph',
+    'Maisie',
+  ];
+  const cats = [
+    'Garfield',
+    'Heathcliff',
+  ]
+  const dinos = [
+    'Barnie',
+    'Sharp Tooth',
+  ]
+
+  const sound = [
+    ' says "Meow!"',
+    ' says "ROWR."',
+    ' says "Woof!"']
+   
+    for (const animal of x){
+      if (dogs.includes(animal)){
+        newArray.push(animal+sound[2])
+      }
+      if (cats.includes(animal)){
+        newArray.push(animal+sound[0])
+      }
+      if (dinos.includes(animal)) {
+        newArray.push(animal+sound[1])
+      }
+    }
+    return newArray
+  }
 
 
+  
 /*********************************
  * OUR CODE BELOW; DO NOT TOUCH! *
  *********************************/
